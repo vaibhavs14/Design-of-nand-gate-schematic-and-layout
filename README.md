@@ -52,14 +52,14 @@ There are advantages with the cmos nand gate design:
 * CMOS technology is highly scalable, allowing for the fabrication of complex integrated circuits with millions of transistors.
 
 An observation can be made from the schematic that we have designd; we have used the width ratio of the **pmos** in the pull network to be double ( _in our case it is 3.5 times bigger than **nmos**, since it is the ideal size which was proved from the previous analyis of our CMOS inverter_) than the width of **nmos** in pull down network. The primary reason for making the **PMOS** transistor in a CMOS inverter 2-3 times larger than the **NMOS** transistor is to **balance the rise and fall times** of the output signal.
-When the input is high, the **NMOS** transistor turns on and pulls the output to ground. When the input is low, the **PMOS** transistor turns on and pulls the output to VDD. By making the PMOS transistor larger, it can drive the output to VDD more quickly, compensating for the NMOS transistor's slower pull-down speed. This balanced switching helps to ensure that the output transitions between high and low states in a symmetrical manner, which is important for proper circuit operation. And also one more parameter affecting the transistors is the mobility of the charge carries. The mobility of holes in pmos is less than the mobility of electrons nmos.
+When the input is high, the **NMOS** transistor turns on and pulls the output to ground. When the input is low, the **PMOS** transistor turns on and pulls the output to VDD. By making the PMOS transistor larger, it can drive the output to VDD more quickly, compensating for the NMOS transistor's slower pull-down speed. This balanced switching helps to ensure that the output transitions between high and low states in a symmetrical manner, which is important for proper circuit operation. And also one more parameter affecting the transistors is the mobility of the charge carries. The mobility of holes in **pmos** is less than the mobility of electrons **nmos**.
 
 ---
 
 ## 2. Layout representation
 
 We have seen the representation of the CMOS nand gate in the form of the schematic from **xschem** and waveforms derived for the given inputs from **ngspice** in the above section. Now we can represent the same nand gate in the form of an layout. Layout design defines the physical arrangement of components and interconnections on the silicon substrate. It's the blueprint that guides the fabrication process. A schematic design alone cannot be directly used to manufacture a chip.
-We have used the layout specification that was avaialble from the open source sky water sky130 PDK too design the layout of our nand gate. Here the ratio of the **pmos to nmos** is taken as **2:1**. Open source tool **magic** is used as layout editor to create our layout reprsentation of nand gate.
+We have used the layout specification that was avaialble from the open source sky water sky130 PDK to design the layout of our nand gate. Here the ratio of the **pmos to nmos** is taken as **2:1**. Open source tool **magic** is used as layout editor to create our layout reprsentation of nand gate.
 
 ![col2](https://github.com/user-attachments/assets/5096747c-ce2e-4357-b5bb-c3d5ececb45c)
 
