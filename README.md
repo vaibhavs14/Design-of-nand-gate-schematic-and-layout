@@ -1,6 +1,6 @@
 # Design-of-nand-gate-schematic-and-layout
 ---
-This project contains the design of an CMOS nand gate and representing it the form of schematic and layout design. We can see the working of an nand gate with respect to the input applied and their output which can be represented in the form of waveforms. The design will utilize the models that are present in __skywater 130nm pdk__ and various open source tools such as, __Xschem__, __NGSPICE__, __MAGIC__, __Netgen__, etc.
+This project contains the design of an CMOS nand gate and representing it in the form of schematic and layout design. We can see the working of an nand gate with respect to the input applied and their output which can be represented in the form of waveforms. The design will utilize the models that are present in __skywater 130nm pdk__ and various open source tools such as, __Xschem__, __NGSPICE__, __MAGIC__, __Netgen__, etc.
 
 Let's get right into it.
 
