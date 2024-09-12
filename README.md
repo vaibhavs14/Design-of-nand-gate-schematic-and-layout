@@ -64,6 +64,8 @@ We have used the layout specification that was avaialble from the open source sk
 
 ![col2](https://github.com/user-attachments/assets/5096747c-ce2e-4357-b5bb-c3d5ececb45c)
 
+---
+
 ## 3. Layout versus schematic (LVS)
 
 In our above sections we have discussed and represented the CMOS inverter in both schematic and layout forms, ensuring a thorough understanding of each representation. The schematic provides a high-level overview of the circuit’s functionality, while the layout translates this functionality into a physical form that can be fabricated on a silicon wafer. Now we can perform a **Layout Versus Schematic (LVS)** check. 
