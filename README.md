@@ -1,6 +1,6 @@
 # Design-of-nand-gate-schematic-and-layout
 ---
-This project contains the design of an CMOS nand gate and representing it in the form of schematic and layout design. We can see the working of an nand gate with respect to the input applied and their output which can be represented in the form of waveforms. The design will utilize the models that are present in __skywater 130nm pdk__ and various open source tools such as, __Xschem__, __NGSPICE__, __MAGIC__, __Netgen__, etc.
+This project contains the design of an CMOS **Nand gate** and representing it in the form of schematic and layout design. We can see the working of an **Nand gate** with respect to the input applied and their output which can be represented in the form of waveforms. The design will utilize the models that are present in __skywater 130nm pdk__ and various open source tools such as, __Xschem__, __NGSPICE__, __MAGIC__, __Netgen__, etc.
 
 Let's get right into it.
 
@@ -14,9 +14,9 @@ Let's get right into it.
 
 ## 1. Schemactic representation
 
-A CMOS NAND gate is a logic gate that implements the logical NAND operation. It has two inputs and one output. The output is high (logic 1) only when both inputs are low (logic 0) or either of the inputs are low (logic 0) or high (high 1). Otherwise, the output is low (logic 0).
+A CMOS **NAND gate** is a logic gate that implements the logical **NAND** operation. It has two inputs and one output. The output is high (logic 1) only when both inputs are low (logic 0) or either of the inputs are low (logic 0) or high (high 1). Otherwise, the output is low (logic 0).
 
-A CMOS NAND gate is constructed using a network of NMOS and PMOS transistors. The NMOS transistor is connected between the power supply (VDD) and the output, while the PMOS transistor is connected between the ground (VSS) and the output. The inputs are connected to the gates of both transistors.
+A CMOS **NAND gate** is constructed using a network of NMOS and PMOS transistors. The NMOS transistor is connected between the power supply (VDD) and the output, while the PMOS transistor is connected between the ground (VSS) and the output. The inputs are connected to the gates of both transistors.
 
 ![col1](https://github.com/user-attachments/assets/5474ef6f-1792-474a-9a77-e0c8d29f46a3)
 
@@ -59,8 +59,8 @@ When the input is high, the **NMOS** transistor turns on and pulls the output to
 
 ## 2. Layout representation
 
-We have seen the representation of the CMOS nand gate in the form of the schematic from **xschem** and waveforms derived for the given inputs from **ngspice** in the above section. Now we can represent the same nand gate in the form of an layout. Layout design defines the physical arrangement of components and interconnections on the silicon substrate. It's the blueprint that guides the fabrication process. A schematic design alone cannot be directly used to manufacture a chip.
-We have used the layout specification that was avaialble from the open source sky water sky130 PDK to design the layout of our nand gate. Here the ratio of the **pmos to nmos** is taken as **2:1**. Open source tool **magic** is used as layout editor to create our layout reprsentation of nand gate.
+We have seen the representation of the CMOS **Nand gate** in the form of the schematic from **xschem** and waveforms derived for the given inputs from **ngspice** in the above section. Now we can represent the same **Nand gate** in the form of an layout. Layout design defines the physical arrangement of components and interconnections on the silicon substrate. It's the blueprint that guides the fabrication process. A schematic design alone cannot be directly used to manufacture a chip.
+We have used the layout specification that was avaialble from the open source sky water sky130 PDK to design the layout of our **Nand gate**. Here the ratio of the **pmos to nmos** is taken as **2:1**. Open source tool **magic** is used as layout editor to create our layout reprsentation of **Nand gate**.
 
 ![col2](https://github.com/user-attachments/assets/5096747c-ce2e-4357-b5bb-c3d5ececb45c)
 
@@ -68,7 +68,7 @@ We have used the layout specification that was avaialble from the open source sk
 
 ## 3. Layout versus schematic (LVS)
 
-In our above sections we have discussed and represented the CMOS inverter in both schematic and layout forms, ensuring a thorough understanding of each representation. The schematic provides a high-level overview of the circuit’s functionality, while the layout translates this functionality into a physical form that can be fabricated on a silicon wafer. Now we can perform a **Layout Versus Schematic (LVS)** check. 
+In our above sections we have discussed and represented the CMOS **Nand gate** in both schematic and layout forms, ensuring a thorough understanding of each representation. The schematic provides a high-level overview of the circuit’s functionality, while the layout translates this functionality into a physical form that can be fabricated on a silicon wafer. Now we can perform a **Layout Versus Schematic (LVS)** check. 
 Below if the netlist that is extracted from the schematic of **nand gate** in the format of spice file:
 
 ![schematic_netlist](https://github.com/user-attachments/assets/3d728a03-8856-4576-8646-2504298aafe8)
@@ -82,8 +82,8 @@ After the tool runs the command you can get to see the result in a tkcon window 
 
 ![lvs_nand_gate](https://github.com/user-attachments/assets/338612f8-0f1f-459e-b4dc-69279cc30cff)
 
-You can see from the above results which shows the number of devices that our schematic and layout design contains; and also the number of total wires our design has. If both netlits matchs, then the final output shows as: **Circuits match uniquely**. This final output results will be dumped into a single file named "comp.out". We can use a editor tool to view this file. The "comp.out" file contains a side by side comparison between both the netlist which is shown below:
+You can see from the above results which shows the number of devices that our schematic and layout design contains; and also the number of total wires our design has. If both netlits matchs, then the final output shows as: **Circuits match uniquely**. This final output results will be dumped into a single file named <comp.out>. We can use a editor tool to view this file. The <comp.out> file contains a side by side comparison between both the netlist which is shown below:
 ![comp_out_nand](https://github.com/user-attachments/assets/0513a905-74d3-4306-af14-a71b450d4730)
 
-Finally we perform a Layout Versus Schematic (LVS) check to ensure the accuracy and integrity of our design. With these steps this project concludes.
+Finally we perform a **Layout Versus Schematic (LVS)** check to ensure the accuracy and integrity of our design. With these steps this project concludes.
 
