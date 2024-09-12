@@ -10,7 +10,7 @@ Let's get right into it.
 ## Contents
 - [1. Schematic representation](#1-Schematic-representation)
 - [2. Layout representation](#2-Layout-representation)
-- [3. Layout versus schematic](#4-Layout-versus-schematic)
+- [3. Layout versus schematic](#3-Layout-versus-schematic)
 
 ## 1. Schemactic representation
 
